@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Recipes"
+    android:theme="@style/Theme.FoodApp"
     tools:context=".RecipeFragment">
 
     <!-- *GUIDELINES FOR CONSTRAINT REASONS* -->
