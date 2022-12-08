@@ -22,29 +22,31 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="327dp"
-                android:layout_height="302dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="88dp"
+                android:layout_width="324dp"
+                android:layout_height="275dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="100dp"
                 android:src="@drawable/pancake_png"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="210dp"
-                android:layout_height="163dp"
-                android:layout_marginTop="204dp"
-                android:layout_marginEnd="16dp"
+                android:layout_width="191dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="76dp"
                 android:background="@drawable/logo_pinkrectangle"
                 android:fontFamily="@font/bs_reg"
                 android:gravity="center_vertical"
+                android:paddingRight="6dp"
                 android:text="@string/pancakeIngredients"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
             <ScrollView
                 android:layout_width="350dp"
@@ -61,6 +63,10 @@
                     android:orientation="vertical">
 
 
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp" />
+
                     <TextView
                         android:id="@+id/textView12"
                         android:layout_width="match_parent"
@@ -76,10 +82,12 @@
                     <TextView
                         android:id="@+id/textView9"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="227dp"
                         android:background="@drawable/textview_corner"
                         android:fontFamily="@font/bs_reg"
                         android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
                         android:text="@string/PancakeRecipe"
                         android:textColor="@color/white"
 
@@ -91,10 +99,10 @@
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="176dp"
+                android:layout_width="196dp"
                 android:layout_height="47dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="24dp"
 
                 android:fontFamily="@font/bs_bold"
                 android:text="Pancake"
@@ -105,26 +113,43 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/textView8"
+                android:layout_width="253dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="72dp"
+                android:background="@drawable/logo_pinkrectangle"
+                android:fontFamily="@font/bs_reg"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.177"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
                 android:id="@+id/textView13"
-                android:layout_width="238dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="180dp"
-                android:layout_marginTop="4dp"
+                android:layout_width="230dp"
+                android:layout_height="22dp"
 
                 android:fontFamily="@font/bs_bold"
                 android:text="@string/PancakeCookingTime"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintHorizontal_bias="0.565"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toTopOf="@+id/textView8" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="50dp"
                 android:layout_height="41dp"
-                android:layout_marginStart="136dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="28dp"
                 android:src="@drawable/add_circle_24"
                 app:layout_constraintStart_toEndOf="@+id/textView10"
                 app:layout_constraintTop_toTopOf="parent" />

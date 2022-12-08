@@ -1,5 +1,6 @@
 package com.example.foodapp;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.Image;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -34,6 +36,7 @@ public class HomeFragment extends Fragment {
     private EditText searchbar;
     private BottomSheetDialog mBottomSheetDialog;
     private BottomSheetDialog mBottomSheetDialog2;
+    private Button seeNow;
 
     private ImageButton ImageButton;
 
@@ -89,6 +92,7 @@ public class HomeFragment extends Fragment {
         ImageButton3= (ImageButton) fragmentView.findViewById(R.id.beef);
         ImageButton4= (ImageButton) fragmentView.findViewById(R.id.pancake);
         ImageButton5= (ImageButton) fragmentView.findViewById(R.id.cobbSalad);
+        seeNow = (Button) fragmentView.findViewById(R.id.seeNowbutton);
         mBottomSheetDialog=new BottomSheetDialog(getActivity());
         //mBottomSheetDialog2=new BottomSheetDialog(getActivity());
         //Text=(TextView) fragmentView.getRootView().findViewById(R.id.text1);
@@ -181,7 +185,5 @@ public class HomeFragment extends Fragment {
         return fragmentView;
         //return inflater.inflate(R.layout.fragment_home, container, false);
     }
-
-
 
 }
