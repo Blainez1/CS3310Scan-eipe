@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="@+id/left_rectangle_accent"
         app:queryHint="Search Recipes/Ingredients..."
         android:requiresFadingEdge="horizontal"
-        app:queryBackground="#00FFFFFF"/>
+        />
 
 
     <ListView
